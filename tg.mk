@@ -1,5 +1,3 @@
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/slim/config/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := bacon
@@ -9,17 +7,17 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # Inherit some common Slim stuff.
-$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+$(call inherit-product, vendor/Gummy/config/common_full_phone.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/Gummy/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/oneplus/bacon/full_bacon.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := bacon
-PRODUCT_NAME := slim_bacon
+PRODUCT_NAME := tg_bacon
 PRODUCT_BRAND := oneplus
 PRODUCT_MODEL := One
 PRODUCT_MANUFACTURER := OnePlus
